@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f4f5ff; /* Светло-лавандовый */
-            color: #1a1a1a;
+            background-color: #000; /* Глубокий черный фон */
+            color: #d1d5ff;            /* Светло-лавандовый текст */
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,66 +18,70 @@
             min-height: 100vh;
             text-align: center;
             font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
         }
 
         .container { 
-            padding: 20px; 
+            padding: 40px 20px; 
             width: 100%;
+            max-width: 900px;
             box-sizing: border-box;
         }
 
         h1 {
             font-family: 'Luckiest Guy', cursive;
-            font-size: clamp(3.2rem, 10vw, 5rem);
-            line-height: 1;
-            margin-bottom: 5px;
-            letter-spacing: 0.05rem;
-            color: #1a1a1a;
+            font-size: clamp(4.5rem, 20vw, 10rem); /* Максимально крупно */
+            line-height: 0.9;
+            margin-bottom: 15px;
+            letter-spacing: 0.1rem;
+            color: #d1d5ff; /* Лавандовое имя */
         }
 
         .subtitle {
-            font-size: 0.55rem;
-            color: #888;
-            margin-bottom: 50px;
-            letter-spacing: 0.5rem;
+            font-size: 0.85rem;
+            color: #8a92c7; 
+            margin-bottom: 80px;
+            letter-spacing: 1.2rem; 
             text-transform: uppercase;
             font-weight: 300;
+            padding-left: 1.2rem;
         }
 
         .links {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            /* Здесь мы уменьшаем ширину блока с кнопками */
-            width: 220px; 
+            gap: 20px;
+            width: 85%; 
+            max-width: 600px; 
             margin: 0 auto;
         }
 
         a {
-            color: #1a1a1a;
+            color: #d1d5ff;
             text-decoration: none;
-            border: 1px solid #1a1a1a;
-            padding: 14px 0;
-            transition: all 0.3s ease;
+            border: 2px solid #d1d5ff; /* Лавандовая рамка */
+            padding: 24px 0;
+            transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
             text-transform: uppercase;
-            font-size: 0.65rem;
-            letter-spacing: 0.15rem;
+            font-size: 0.9rem;
+            letter-spacing: 0.4rem;
             border-radius: 0px;
         }
 
         a:hover {
-            background-color: #1a1a1a;
-            color: #f4f5ff;
+            background-color: #d1d5ff;
+            color: #000; /* При наведении текст становится черным */
+            letter-spacing: 0.6rem;
         }
 
         footer {
-            position: absolute;
-            bottom: 30px;
+            margin-top: auto;
+            padding-bottom: 40px;
             width: 100%;
-            font-size: 0.5rem;
-            line-height: 1.8;
-            color: #aaa;
-            letter-spacing: 0.1rem;
+            font-size: 0.65rem;
+            line-height: 2;
+            color: #444; /* Тусклый цвет для второстепенного текста */
+            letter-spacing: 0.15rem;
             text-transform: uppercase;
         }
     </style>
