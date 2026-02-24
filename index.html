@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAYLIE | Official Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #fff; /* Белый фон */
-            color: #000;            /* Черный текст */
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #d1d5ff; /* Тот самый лавандовый фон */
+            color: #6e76ab;            /* Цвет текста как на макете */
+            font-family: 'Fredoka', sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -17,46 +18,60 @@
             margin: 0;
             text-align: center;
         }
-        .container { padding: 20px; width: 100%; max-width: 400px; }
-        h1 {
-            font-size: 3rem;
-            letter-spacing: 0.8rem;
+        .container { 
+            padding: 20px; 
+            width: 85%; 
+            max-width: 400px; 
+        }
+        
+        /* Место для логотипа */
+        .logo {
+            width: 100%;
+            max-width: 300px;
             margin-bottom: 10px;
-            text-transform: uppercase;
-            font-weight: 300;
         }
-        p {
-            font-size: 0.9rem;
-            color: #888;
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: #6e76ab;
+            text-transform: uppercase;
+        }
+
+        .coming-soon {
+            font-size: 1.5rem;
             margin-bottom: 40px;
-            letter-spacing: 0.2rem;
-            text-transform: uppercase;
+            font-weight: 400;
         }
+
         .links {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
+
         a {
-            color: #000;
+            color: #6e76ab;
             text-decoration: none;
-            border: 1.5px solid #000; /* Черная рамка */
-            padding: 14px 0;
+            background-color: rgba(255, 255, 255, 0.4); /* Полупрозрачный белый */
+            border: 3px solid #6e76ab; /* Толстая рамка */
+            padding: 18px 0;
             transition: all 0.3s ease;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 0.15rem;
-            border-radius: 30px; /* Округлые рамки */
+            font-size: 1.8rem;
+            font-weight: 600;
+            border-radius: 0px; /* На фото рамки острые, но массивные */
         }
+
         a:hover {
-            background: #000;
-            color: #fff;
+            background-color: #6e76ab;
+            color: #d1d5ff;
         }
+
         footer {
-            margin-top: 60px;
-            font-size: 0.6rem;
-            color: #aaa;
-            letter-spacing: 0.1rem;
+            margin-top: 50px;
+            font-size: 0.7rem;
+            line-height: 1.6;
+            color: #8a92c7;
         }
     </style>
 </head>
@@ -64,7 +79,7 @@
 
     <div class="container">
         <h1>MAYLIE</h1>
-        <p>Official Website</p>
+        <div class="coming-soon">‘coming soon’</div>
 
         <div class="links">
             <a href="https://instagram.com/themaylie" target="_blank">Instagram</a>
@@ -73,6 +88,7 @@
     </div>
 
     <footer>
+        Produced by Anastasia A. Malysheva<br>
         &copy; 2026 MAYLIE. ALL RIGHTS RESERVED.
     </footer>
 
