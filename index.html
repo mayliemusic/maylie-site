@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAYLIE | Official Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            /* Градиент: 70% черного, затем мягкий переход в красный */
-            background: linear-gradient(180deg, #000000 70%, #990000 100%);
+            /* Плавный переход из черного в красный до самого низа */
+            background: linear-gradient(180deg, #000000 60%, #cc0000 100%);
             background-attachment: fixed;
-            color: #ff0000; /* Основной красный цвет */
+            color: #ff0000;
             margin: 0;
             padding: 0;
             display: flex;
@@ -27,7 +27,7 @@
             width: 100%;
             max-width: 900px;
             box-sizing: border-box;
-            flex-grow: 1; /* Чтобы контейнер занимал всё место до футера */
+            flex-grow: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -39,22 +39,25 @@
             line-height: 0.9;
             margin-bottom: 5px;
             color: #ff0000;
-            text-shadow: 0 0 20px rgba(255, 0, 0, 0.3); /* Легкое свечение */
+            /* Убрали text-shadow (подсвечивание) */
+            text-shadow: none; 
         }
 
         .subtitle {
-            font-size: 1rem; /* Уменьшили размер */
-            color: #ff0000; 
-            margin-bottom: 60px;
-            letter-spacing: 0.1rem; /* Убрали большое расстояние между буквами */
-            font-weight: 400;
+            /* Сделали максимально незаметным и мелким */
+            font-size: 0.55rem; 
+            color: rgba(255, 0, 0, 0.4); /* Полупрозрачный красный */
+            margin-bottom: 80px;
+            letter-spacing: 0.05rem; /* Обычное расстояние */
+            text-transform: uppercase;
+            font-weight: 300;
         }
 
         .links {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            width: 85%; 
+            width: 80%; 
             max-width: 500px; 
             margin: 0 auto;
         }
@@ -62,11 +65,11 @@
         a {
             color: #ff0000;
             text-decoration: none;
-            border: 2px solid #ff0000;
+            border: 1.5px solid #ff0000;
             padding: 20px 0;
             transition: all 0.3s ease;
             text-transform: uppercase;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             letter-spacing: 0.2rem;
             font-weight: 700;
         }
@@ -77,14 +80,14 @@
         }
 
         footer {
-            background-color: #ff0000; /* Полностью красный фон футера */
             width: 100%;
-            padding: 25px 0;
-            color: #000; /* Черный текст на красном фоне */
-            font-size: 0.7rem;
-            line-height: 1.6;
+            padding: 40px 0;
+            /* Черный текст внизу, где фон уже красный от градиента */
+            color: #000000; 
+            font-size: 0.65rem;
+            line-height: 1.8;
             font-weight: 700;
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.1rem;
             text-transform: uppercase;
         }
     </style>
