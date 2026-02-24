@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAYLIE's here!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <title>MAYLIE | Official Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #000; /* Глубокий черный фон */
-            color: #d1d5ff;            /* Светло-лавандовый текст */
+            /* Градиент: 70% черного, затем мягкий переход в красный */
+            background: linear-gradient(180deg, #000000 70%, #990000 100%);
+            background-attachment: fixed;
+            color: #ff0000; /* Основной красный цвет */
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,7 +20,6 @@
             min-height: 100vh;
             text-align: center;
             font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
         }
 
         .container { 
@@ -26,62 +27,64 @@
             width: 100%;
             max-width: 900px;
             box-sizing: border-box;
+            flex-grow: 1; /* Чтобы контейнер занимал всё место до футера */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         h1 {
             font-family: 'Luckiest Guy', cursive;
-            font-size: clamp(4.5rem, 20vw, 10rem); /* Максимально крупно */
+            font-size: clamp(4.5rem, 20vw, 10rem); 
             line-height: 0.9;
-            margin-bottom: 15px;
-            letter-spacing: 0.1rem;
-            color: #d1d5ff; /* Лавандовое имя */
+            margin-bottom: 5px;
+            color: #ff0000;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.3); /* Легкое свечение */
         }
 
         .subtitle {
-            font-size: 0.85rem;
-            color: #8a92c7; 
-            margin-bottom: 80px;
-            letter-spacing: 1.2rem; 
-            text-transform: uppercase;
-            font-weight: 300;
-            padding-left: 1.2rem;
+            font-size: 1rem; /* Уменьшили размер */
+            color: #ff0000; 
+            margin-bottom: 60px;
+            letter-spacing: 0.1rem; /* Убрали большое расстояние между буквами */
+            font-weight: 400;
         }
 
         .links {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 15px;
             width: 85%; 
-            max-width: 600px; 
+            max-width: 500px; 
             margin: 0 auto;
         }
 
         a {
-            color: #d1d5ff;
+            color: #ff0000;
             text-decoration: none;
-            border: 2px solid #d1d5ff; /* Лавандовая рамка */
-            padding: 24px 0;
-            transition: all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+            border: 2px solid #ff0000;
+            padding: 20px 0;
+            transition: all 0.3s ease;
             text-transform: uppercase;
             font-size: 0.9rem;
-            letter-spacing: 0.4rem;
-            border-radius: 0px;
+            letter-spacing: 0.2rem;
+            font-weight: 700;
         }
 
         a:hover {
-            background-color: #d1d5ff;
-            color: #000; /* При наведении текст становится черным */
-            letter-spacing: 0.6rem;
+            background-color: #ff0000;
+            color: #000;
         }
 
         footer {
-            margin-top: auto;
-            padding-bottom: 40px;
+            background-color: #ff0000; /* Полностью красный фон футера */
             width: 100%;
-            font-size: 0.65rem;
-            line-height: 2;
-            color: #444; /* Тусклый цвет для второстепенного текста */
-            letter-spacing: 0.15rem;
+            padding: 25px 0;
+            color: #000; /* Черный текст на красном фоне */
+            font-size: 0.7rem;
+            line-height: 1.6;
+            font-weight: 700;
+            letter-spacing: 0.05rem;
             text-transform: uppercase;
         }
     </style>
