@@ -3,92 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAYLIE | Official Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>MAYLIE's here!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            /* Плавный переход из черного в красный до самого низа */
-            background: linear-gradient(180deg, #000000 60%, #cc0000 100%);
+            background: linear-gradient(180deg, #000000 65%, #cc0000 100%);
             background-attachment: fixed;
-            color: #ff0000;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             min-height: 100vh;
             text-align: center;
             font-family: 'Inter', sans-serif;
+            color: #ff0000;
         }
 
         .container { 
-            padding: 40px 20px; 
-            width: 100%;
-            max-width: 900px;
-            box-sizing: border-box;
-            flex-grow: 1;
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            width: 100%;
         }
 
         h1 {
             font-family: 'Luckiest Guy', cursive;
-            font-size: clamp(4.5rem, 20vw, 10rem); 
+            font-size: clamp(4.5rem, 18vw, 9.5rem);
             line-height: 0.9;
-            margin-bottom: 5px;
+            margin: 0;
             color: #ff0000;
-            /* Убрали text-shadow (подсвечивание) */
             text-shadow: none; 
         }
 
         .subtitle {
-            /* Сделали максимально незаметным и мелким */
-            font-size: 0.55rem; 
-            color: rgba(255, 0, 0, 0.4); /* Полупрозрачный красный */
-            margin-bottom: 80px;
-            letter-spacing: 0.05rem; /* Обычное расстояние */
+            font-size: 0.5rem;
+            color: rgba(255, 0, 0, 0.3);
+            margin-top: 5px;
+            margin-bottom: 70px;
+            letter-spacing: 0.05rem;
             text-transform: uppercase;
-            font-weight: 300;
         }
 
         .links {
             display: flex;
             flex-direction: column;
             gap: 15px;
-            width: 80%; 
-            max-width: 500px; 
-            margin: 0 auto;
+            width: 100%;
+            max-width: 450px;
         }
 
         a {
             color: #ff0000;
             text-decoration: none;
-            border: 1.5px solid #ff0000;
-            padding: 20px 0;
-            transition: all 0.3s ease;
+            border: 2px solid #ff0000;
+            padding: 22px 0;
             text-transform: uppercase;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             letter-spacing: 0.2rem;
             font-weight: 700;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            background-color: transparent;
         }
 
-        a:hover {
+        a:hover, a:active {
             background-color: #ff0000;
-            color: #000;
+            color: #000000;
         }
 
         footer {
             width: 100%;
-            padding: 40px 0;
-            /* Черный текст внизу, где фон уже красный от градиента */
-            color: #000000; 
-            font-size: 0.65rem;
-            line-height: 1.8;
+            padding: 30px 20px; /* Уменьшил отступы */
+            color: rgba(0, 0, 0, 0.7); /* Сделал черный чуть мягче */
+            font-size: 0.55rem; /* Уменьшил размер текста */
+            line-height: 1.6;
             font-weight: 700;
-            letter-spacing: 0.1rem;
             text-transform: uppercase;
+            letter-spacing: 0.05rem;
         }
     </style>
 </head>
