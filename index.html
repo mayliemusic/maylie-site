@@ -5,9 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>MAYLIE</title>
-    <meta name="description" content="MAYLIE Official Website. Coming soon.">
-    <meta name="keywords" content="MAYLIE, music, artist, official">
+    <title>MAYLIE | Official Website</title>
+    <meta name="description" content="MAYLIE [USA] - Official website of the conceptual pop artist. I’ll Be Better.">
+    <meta name="keywords" content="MAYLIE, MAYLIE USA, music, artist, official, Party And Escape, I'll be better">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "MAYLIE",
+      "alternateName": "MAYLIE [USA]",
+      "url": "https://themaylie.com",
+      "description": "Conceptual pop artist and songwriter.",
+      "sameAs": [
+        "https://genius.com/artists/Maylie-usa",
+        "https://musicbrainz.org/artist/0fde2f53-54d1-4e0f-8740-7239110f4d5b",
+        "https://soundcloud.com/themaylie",
+        "https://instagram.com/themaylie",
+        "https://www.tiktok.com/@themaylie"
+      ]
+    }
+    </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     
@@ -17,7 +35,7 @@
         }
 
         body {
-            /* Плавный переход из черного в красный до самого низа */
+            /* Фирменный градиент из черного в красный */
             background: linear-gradient(180deg, #000000 65%, #cc0000 100%);
             background-attachment: fixed;
             margin: 0;
@@ -47,44 +65,41 @@
             line-height: 0.9;
             margin: 0;
             color: #ff0000;
-            /* Без подсвечивания */
-            text-shadow: none; 
         }
 
         .subtitle {
-            /* Максимально незаметный и мелкий */
-            font-size: 0.45rem; 
-            color: rgba(255, 0, 0, 0.2); 
+            font-size: 0.5rem; 
+            color: rgba(255, 0, 0, 0.5); 
             margin-top: 5px;
-            margin-bottom: 70px;
-            letter-spacing: 0.05rem;
+            margin-bottom: 50px;
+            letter-spacing: 0.2rem;
             text-transform: uppercase;
+            font-weight: 700;
         }
 
         .links {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
             width: 100%;
-            max-width: 450px;
+            max-width: 400px;
         }
 
+        /* 2. ВИДИМЫЕ КНОПКИ ДЛЯ ЛЮДЕЙ */
         a {
             color: #ff0000;
             text-decoration: none;
-            border: 2px solid #ff0000;
-            padding: 22px 0;
+            border: 1.5px solid #ff0000;
+            padding: 18px 0;
             text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 0.2rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.15rem;
             font-weight: 700;
-            transition: background-color 0.2s ease, color 0.2s ease;
+            transition: all 0.2s ease;
             background-color: transparent;
-            /* Убирает выделение при клике на смартфонах */
             -webkit-tap-highlight-color: transparent; 
         }
 
-        /* При нажатии/наведении: заливка красным, текст черным */
         a:hover, a:active {
             background-color: #ff0000;
             color: #000000;
@@ -93,9 +108,8 @@
         footer {
             width: 100%;
             padding: 25px 20px;
-            /* Черный текст на красном фоне в самом низу */
-            color: rgba(0, 0, 0, 0.7);
-            font-size: 0.5rem; /* Еще меньше */
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 0.55rem;
             line-height: 1.6;
             font-weight: 700;
             text-transform: uppercase;
@@ -107,9 +121,11 @@
 
     <div class="container">
         <h1>MAYLIE</h1>
-        <div class="subtitle">coming soon</div>
+        <div class="subtitle">I’ll be better</div>
 
         <div class="links">
+            <a href="https://soundcloud.com/themaylie" target="_blank" rel="noopener">SoundCloud</a>
+            <a href="https://genius.com/artists/Maylie-usa" target="_blank" rel="noopener">Genius</a>
             <a href="https://instagram.com/themaylie" target="_blank" rel="noopener">Instagram</a>
             <a href="https://www.tiktok.com/@themaylie" target="_blank" rel="noopener">TikTok</a>
         </div>
