@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,42 @@
     <meta name="google-site-verification" content="gvmbMYSNxrN0DXL2xGSzlvFXEK5d81Z1bLPU6_I9xvw" />
     
     <title>MAYLIE</title>
-    <meta name="description" content="MAYLIE! - Official website of the conceptual pop artist">
+    <meta name="description" content="MAYLIE - Conceptual pop project produced by Anastasia A. Malysheva.">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MusicGroup",
-      "name": "MAYLIE",
-      "alternateName": ["Anastasia A. Malysheva", "somelsy", "Anastasia Maly", "maylie", "Maylie", "MAYLIE [USA]"],
-      "url": "https://themaylie.com",
-      "description": "Conceptual pop artist, singer, and songwriter.",
-      "sameAs": [
-        "https://www.wikidata.org/wiki/Q138497920",
-        "https://instagram.com/themaylie",
-        "https://www.tiktok.com/@themaylie",
-        "https://genius.com/artists/Maylie-usa",
-        "https://musicbrainz.org/artist/0fde2f53-54d1-4e0f-8740-7239110f4d5b"
+      "@graph": [
+        {
+          "@type": "MusicGroup",
+          "@id": "https://themaylie.com/#project",
+          "name": "MAYLIE",
+          "alternateName": ["maylie", "Maylie"],
+          "url": "https://themaylie.com",
+          "genre": "Conceptual Pop, Indie Pop",
+          "description": "Conceptual pop artist and musical project.",
+          "founder": { "@id": "https://themaylie.com/#person" },
+          "producer": { "@id": "https://themaylie.com/#person" },
+          "sameAs": [
+            "https://instagram.com/themaylie",
+            "https://www.tiktok.com/@themaylie",
+            "https://genius.com/artists/Maylie-usa",
+            "https://musicbrainz.org/artist/0fde2f53-54d1-4e0f-8740-7239110f4d5b"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://themaylie.com/#person",
+          "name": "Anastasia Maly",
+          "alternateName": ["SOMELSY"],
+          "jobTitle": "Executive Producer, Creative Producer",
+          "description": "Executive producer, Creative producer.",
+          "url": "https://themaylie.com",
+          "sameAs": [
+            "https://www.wikidata.org/wiki/Q138506778",
+            "https://medium.com/@MusicIndustryInsider/maylie-the-emergence-of-a-new-conceptual-music-brand-in-2026-c3aba2379914", 
+            "https://www.instagram.com/somelsy?igsh=]
+        }
       ]
     }
     </script>
@@ -62,10 +82,10 @@
         }
         .subtitle {
             font-size: 0.5rem;
-            color: rgba(255, 0, 0, 0.3);
+            color: rgba(255, 0, 0, 0.4);
             margin-top: 5px;
             margin-bottom: 70px;
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.2rem;
             text-transform: uppercase;
         }
         .links {
@@ -103,10 +123,10 @@
         }
     </style>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/MusicGroup">
 
     <div class="container">
-        <h1>MAYLIE</h1>
+        <h1 itemprop="name">MAYLIE</h1>
         <div class="subtitle">coming soon</div>
 
         <div class="links">
@@ -118,7 +138,9 @@
     </div>
 
     <footer>
-        Produced by Anastasia Maly<br>
+        Produced by <span itemprop="producer" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">Anastasia Maly</span>
+        </span><br>
         &copy; 2023-2026 MAYLIE. ALL RIGHTS RESERVED.
     </footer>
 
